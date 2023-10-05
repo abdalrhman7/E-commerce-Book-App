@@ -3,7 +3,6 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../constants/app_color.dart';
 
-
 class MainButton extends StatelessWidget {
   final String text;
   final VoidCallback onTap;
@@ -25,14 +24,15 @@ class MainButton extends StatelessWidget {
       child: ElevatedButton(
         onPressed: onTap,
         style: ElevatedButton.styleFrom(
-          backgroundColor: kMainColor,
-        ),
+            backgroundColor: kMainColor,
+            shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(18.w))),
         child: Text(
           text,
           style: TextStyle(
             color: Colors.white,
             fontWeight: FontWeight.w500,
-            fontSize: 20.sp,
+            fontSize: 18.sp,
           ),
         ),
       ),

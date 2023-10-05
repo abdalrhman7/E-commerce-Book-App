@@ -8,7 +8,7 @@ class BestSellerInitial extends BestSellerState {}
 class BestSellerLoading extends BestSellerState {}
 
 class BestSellerSuccess extends BestSellerState {
-  final List<Products> products;
+  final List<Books> products;
 
   BestSellerSuccess(this.products);
 }

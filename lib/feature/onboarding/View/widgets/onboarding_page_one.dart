@@ -31,16 +31,8 @@ PageModel onBoardingPageOne() {
              Padding(
               padding: const EdgeInsets.symmetric(horizontal: 45.0),
               child: Text(
-                'Book Appointment',
-                style: Style.textStyle22.copyWith(color: kMainColor , fontWeight: FontWeight.bold),
-                textAlign: TextAlign.center,
-              ),
-            ),
-             Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 45.0, vertical: 10.0),
-              child: Text(
-                'Book on appointment with \n a right doctor ',
-                style: Style.textStyle16.copyWith(color: kMainColor , fontWeight: FontWeight.bold),
+                'Get Programing Book',
+                style: Style.textStyle22.copyWith(color: kSecondaryColor , fontWeight: FontWeight.bold),
                 textAlign: TextAlign.center,
               ),
             ),

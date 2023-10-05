@@ -34,13 +34,13 @@ class _OnBoardingState extends State<OnBoarding> {
   Material _skipButton({void Function(int)? setIndex}) {
     return Material(
       borderRadius: defaultSkipButtonBorderRadius,
-      color: kMainColor,
+      color: kSecondaryColor,
       child: InkWell(
         borderRadius: defaultSkipButtonBorderRadius,
         onTap: () {
           if (setIndex != null) {
-            index = 2;
-            setIndex(2);
+            index = 1;
+            setIndex(1);
           }
         },
         child: const Padding(
@@ -57,7 +57,7 @@ class _OnBoardingState extends State<OnBoarding> {
   Material get _signupButton {
     return Material(
       borderRadius: defaultProceedButtonBorderRadius,
-      color: kMainColor,
+      color: kSecondaryColor,
       child: InkWell(
         borderRadius: defaultProceedButtonBorderRadius,
         onTap: () {

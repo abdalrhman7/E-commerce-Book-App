@@ -30,16 +30,16 @@ PageModel onBoardingPageTwo() {
              Padding(
               padding:const EdgeInsets.symmetric(horizontal: 45.0),
               child: Text(
-                'Be Good ',
-                style: Style.textStyle22.copyWith(color: kMainColor , fontWeight: FontWeight.bold),
+                'Track your orders',
+                style: Style.textStyle22.copyWith(color: kSecondaryColor , fontWeight: FontWeight.bold),
                 textAlign: TextAlign.left,
               ),
             ),
              Padding(
               padding:const EdgeInsets.symmetric(horizontal: 45.0, vertical: 10.0),
               child: Text(
-                'Be always in good Heath',
-                style: Style.textStyle16.copyWith(color: kMainColor , fontWeight: FontWeight.bold),
+                'and receive notifications about exclusive offers and discounts.',
+                style: Style.textStyle16.copyWith(color: kSecondaryColor , fontWeight: FontWeight.bold , overflow: TextOverflow.visible),
                 textAlign: TextAlign.center,
               ),
             ),

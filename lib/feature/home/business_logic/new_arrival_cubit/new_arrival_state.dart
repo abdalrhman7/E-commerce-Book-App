@@ -8,7 +8,7 @@ class NewArrivalInitial extends NewArrivalState {}
 class NewArrivalLoading extends NewArrivalState {}
 
 class NewArrivalSuccess extends NewArrivalState {
-  final List<Products> products;
+  final List<Books> products;
 
   NewArrivalSuccess(this.products);
 }

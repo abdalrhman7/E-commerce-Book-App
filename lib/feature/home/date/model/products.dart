@@ -1,16 +1,16 @@
-class Products {
+class Books {
   int? id;
   String? name;
   String? description;
   String? price;
   int? discount;
-  double? priceAfterDiscount;
+  num? priceAfterDiscount;
   int? stock;
   int? bestSeller;
   String? image;
   String? category;
 
-  Products({
+  Books({
     this.id,
     this.name,
     this.description,
@@ -23,7 +23,7 @@ class Products {
     this.category,
   });
 
-  Products.fromJson(Map<String, dynamic> json) {
+  Books.fromJson(Map<String, dynamic> json) {
     id = json['id'];
     name = json['name'];
     description = json['description'];

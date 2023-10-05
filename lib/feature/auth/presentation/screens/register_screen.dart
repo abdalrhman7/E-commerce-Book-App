@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-import '../../../../../core/function/main_snack_bar.dart';
+import '../../../../core/widgets/main_snack_bar.dart';
 import '../../../../../core/widgets/CustomCircularProgressIndicator.dart';
 import '../../../../../core/widgets/default_text_form_filed.dart';
 import '../../../../core/app_route/routes.dart';
@@ -132,7 +132,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
           );
         }
         if (state is RegisterError) {
-          mainSnackBar(context, state.errMessage);
+          mainSnackBar(context:  context, title:  state.errMessage ,success:  false);
         }
       },
       builder: (context, state) {

@@ -33,6 +33,18 @@ class HomeScreen extends StatelessWidget {
     );
   }
 
+  Widget buildBestSellerBlocBuilder() {
+    return BlocBuilder<BestSellerCubit, BestSellerState>(
+        builder: (context, state) {
+          if (state is BestSellerError) {
+            return Center(child: Text(state.errMessage));
+          } else if (state is BestSellerSuccess) {
+            return buildProductsItemListView('Best Seller', state.products);
+          }
+          return const CustomCircularProgressIndicator();
+        });
+  }
+
   Widget buildCategoryBlocBuilder() {
     return BlocBuilder<CategoryCubit, CategoryState>(
       builder: (context, state) {
@@ -49,32 +61,21 @@ class HomeScreen extends StatelessWidget {
   Widget buildCategoryListView(List<Category> category) {
     return Column(
       children: [
-        const CategoryText(title: 'Categories'),
+        const DepartmentName(title: 'Categories'),
         SizedBox(
           height: .20.sh,
           child: ListView.builder(
+            padding: EdgeInsets.zero,
             scrollDirection: Axis.horizontal,
             itemCount: category.length,
             itemBuilder: (context, index) => Padding(
-              padding: EdgeInsets.symmetric( horizontal: 8.r),
+              padding: EdgeInsets.symmetric(vertical: 0.r,  horizontal: 8.r),
               child: CategoryItem(category: category[index]),
             ),
           ),
         ),
       ],
     );
-  }
-
-  Widget buildBestSellerBlocBuilder() {
-    return BlocBuilder<BestSellerCubit, BestSellerState>(
-        builder: (context, state) {
-      if (state is BestSellerError) {
-        return Center(child: Text(state.errMessage));
-      } else if (state is BestSellerSuccess) {
-        return buildProductsItemListView('Best Seller', state.products);
-      }
-      return const CustomCircularProgressIndicator();
-    });
   }
 
   Widget buildNewArrivalBlocBuilder() {
@@ -90,10 +91,13 @@ class HomeScreen extends StatelessWidget {
     );
   }
 
-  Widget buildProductsItemListView(String seller, List<Products> products) {
+
+
+
+  Widget buildProductsItemListView(String departmentName, List<Books> products) {
     return Column(
       children: [
-        CategoryText(title: seller),
+        DepartmentName(title: departmentName),
         SizedBox(
           height: 0.35.sh,
           child: ListView.builder(

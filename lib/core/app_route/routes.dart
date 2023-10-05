@@ -6,4 +6,7 @@ class AppRoutes {
   static const String bottomNavbar = '/bottom_bav_bar';
   static const String detailsScreen = '/details_screen';
   static const String editAccountScreen = '/edit_account_screen';
+  static const String checkoutScreen = '/CheckoutScreen';
+  static const String myOrderScreen = '/MyOrderScreen';
+  static const String updateProfileInfo = '/UpdateProfileInfo';
 }

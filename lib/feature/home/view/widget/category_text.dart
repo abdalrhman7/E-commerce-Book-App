@@ -3,8 +3,8 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../../../../core/constants/text_style.dart';
 
-class CategoryText extends StatelessWidget {
-  const CategoryText({super.key, required this.title});
+class DepartmentName extends StatelessWidget {
+  const DepartmentName({super.key, required this.title});
 
   final String title;
   @override
@@ -20,7 +20,7 @@ class CategoryText extends StatelessWidget {
             children: [
               Text(
                 title,
-                style: Style.textStyle22.copyWith(fontWeight: FontWeight.bold),
+                style: Style.textStyle20.copyWith(fontWeight: FontWeight.bold),
               ),
               const Icon(Icons.arrow_forward),
             ],

@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-import '../../../../../core/function/main_snack_bar.dart';
+import '../../../../core/widgets/main_snack_bar.dart';
 import '../../../../core/app_route/routes.dart';
 import '../../../../core/constants/my_validators.dart';
 import '../../../../core/widgets/CustomCircularProgressIndicator.dart';
@@ -24,8 +24,8 @@ class _LoginScreenState extends State<LoginScreen> {
 
   @override
   void initState() {
-    _emailController = TextEditingController(text: 'nopy@nopy.com');
-    _passwordController = TextEditingController(text: '123456');
+    _emailController = TextEditingController(text: 'nopy1@nopy.com');
+    _passwordController = TextEditingController(text: '12345678');
     super.initState();
   }
 
@@ -149,7 +149,7 @@ class _LoginScreenState extends State<LoginScreen> {
           );
         }
         if (state is LoginError) {
-          mainSnackBar(context, state.errMessage);
+          mainSnackBar(context:  context, title:  state.errMessage ,success:  false);
         }
       },
       builder: (context, state) {

@@ -45,7 +45,7 @@ class SaleWidget extends StatelessWidget {
       decoration: const BoxDecoration(
         gradient: LinearGradient(
           colors: [
-            kMainColor,
+            kSecondaryColor,
             Color(0xFF82C3DF),
           ],
           begin: FractionalOffset(0.0, 0.0),

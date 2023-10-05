@@ -1,4 +1,3 @@
-import 'package:book_store/core/app_route/routes.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -10,6 +9,7 @@ import 'injection.dart';
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await CacheData.cacheInitialization();
+  //Bloc.observer = SimpleBlocObserver();
   initGetIt();
   runApp(const MyApp());
 }
@@ -25,7 +25,8 @@ class MyApp extends StatelessWidget {
       splitScreenMode: true,
       child: MaterialApp(
         scrollBehavior: ScrollConfiguration.of(context).copyWith(
-          physics: const BouncingScrollPhysics(),
+          physics: const BouncingScrollPhysics(
+              parent: AlwaysScrollableScrollPhysics()),
         ),
         title: 'Book Store',
         debugShowCheckedModeBanner: false,
@@ -35,5 +36,3 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-
-

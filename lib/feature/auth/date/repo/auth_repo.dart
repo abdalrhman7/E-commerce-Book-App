@@ -26,8 +26,8 @@ class AuthRepo {
   }
 
 
-  Future<void> logout(String? token) async {
+  Future<void> logout() async {
     await webService
-        .postData(data: {}, endPoint: ApiConstants.logout, token: token);
+        .postData(data: {}, endPoint: ApiConstants.logout);
   }
 }

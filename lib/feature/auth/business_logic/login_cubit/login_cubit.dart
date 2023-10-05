@@ -27,11 +27,5 @@ class LoginCubit extends Cubit<LoginState> {
     );
   }
 
-  Future<void> logout() async {
-    String? token = await secureStorage.readSecureData('token');
-    await authRepo.logout(
-      token,
-    );
-    secureStorage.deleteSecureData('token');
-  }
+
 }
