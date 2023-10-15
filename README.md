@@ -13,6 +13,7 @@ The E-commerce Book App is a Flutter-based application that allows users to expl
 - **Flutter:** The application is built using the Flutter framework, ensuring a smooth and responsive user interface.
 - **Bloc State Management:** Bloc is used for state management, providing efficient handling of app states and user interactions.
 - **Clean Architecture:** The project follows Clean Architecture principles for maintainability and scalability.
+- **Dio:** Dio is used for making network requests, enabling smooth interaction with external APIs.
 
 ![Screenshot_2023-10-14-20-19-55-483_com example book_store](https://github.com/abdalrhman7/E-commerce-Book-App/assets/119235456/6af854ff-a0bf-467b-a234-9812b1eb72b8)
 ![Screenshot_2023-10-14-20-19-45-092_com example book_store](https://github.com/abdalrhman7/E-commerce-Book-App/assets/119235456/8659e66c-acc7-4936-9666-6467d8134a91)
