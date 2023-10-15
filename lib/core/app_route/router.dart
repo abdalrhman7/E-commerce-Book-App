@@ -13,7 +13,7 @@ import '../../feature/auth/business_logic/register_cubit/register_cubit.dart';
 import '../../feature/auth/date/repo/auth_repo.dart';
 import '../../feature/auth/presentation/screens/login_screen.dart';
 import '../../feature/auth/presentation/screens/register_screen.dart';
-import '../../feature/bottom_navigation_bar/view/screen/bottom_navigation_bar.dart';
+import '../../feature/bottom_navigation_bar/screen/bottom_navigation_bar.dart';
 import '../../feature/checkout/presentation/screen/cheakout_screen.dart';
 import '../../feature/my_order/business_logic/my_order_cubit/my_order_cubit.dart';
 import '../../feature/onboarding/View/Pages/onboarding.dart';
@@ -38,7 +38,7 @@ Route<dynamic> generateRoute(RouteSettings settings) {
         builder: (_) => BlocProvider(
           create: (context) =>
               LoginCubit(getIt.get<AuthRepo>(), getIt.get<SecureStorage>()),
-          child: const LoginScreen(),
+          child:  LoginScreen(),
         ),
         settings: settings,
       );

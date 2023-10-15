@@ -14,18 +14,18 @@ import 'package:persistent_bottom_nav_bar_v2/persistent-tab-view.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../../../../injection.dart';
-import '../../../books/presentation/screen/book_screen.dart';
-import '../../../cart/business_logic/cart_cubit/cart_cubit.dart';
-import '../../../cart/presentation/screen/cart_screen.dart';
-import '../../../favorite/business_logic/get_favorite_cubit/get_favorite_cubit.dart';
-import '../../../favorite/view/screen/favorite_screen.dart';
-import '../../../home/business_logic/category_cubit/category_cubit.dart';
-import '../../../home/date/repo/home_repo.dart';
-import '../../../home/view/screen/home_screen.dart';
-import '../../../product_details/data/repo/product_details_repo.dart';
-import '../../../profile/business_logic/profile_info_cubit/profile_info_cubit.dart';
-import '../../../profile/business_logic/update_profile_cubit/update_profile_cubit.dart';
-import '../../../profile/presentation/screen/profile_screen.dart';
+import '../../books/presentation/screen/book_screen.dart';
+import '../../cart/business_logic/cart_cubit/cart_cubit.dart';
+import '../../cart/presentation/screen/cart_screen.dart';
+import '../../favorite/business_logic/get_favorite_cubit/get_favorite_cubit.dart';
+import '../../favorite/view/screen/favorite_screen.dart';
+import '../../home/business_logic/category_cubit/category_cubit.dart';
+import '../../home/date/repo/home_repo.dart';
+import '../../home/view/screen/home_screen.dart';
+import '../../product_details/data/repo/product_details_repo.dart';
+import '../../profile/business_logic/profile_info_cubit/profile_info_cubit.dart';
+import '../../profile/business_logic/update_profile_cubit/update_profile_cubit.dart';
+import '../../profile/presentation/screen/profile_screen.dart';
 
 class BottomNavbar extends StatefulWidget {
   const BottomNavbar({Key? key}) : super(key: key);

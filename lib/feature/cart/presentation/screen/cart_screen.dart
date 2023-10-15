@@ -11,9 +11,21 @@ import '../widget/get_cart_items_bloc_builder.dart';
 import '../../../../core/widgets/search_bar_widget.dart';
 import '../widget/total_price_widget.dart';
 
-class CartScreen extends StatelessWidget {
+class CartScreen extends StatefulWidget {
   const CartScreen({super.key});
 
+  @override
+  State<CartScreen> createState() => _CartScreenState();
+}
+
+
+class _CartScreenState extends State<CartScreen> {
+
+  @override
+  void initState() {
+    BlocProvider.of<CartCubit>(context).getAllCart();
+    super.initState();
+  }
   @override
   Widget build(BuildContext context) {
     return SafeArea(

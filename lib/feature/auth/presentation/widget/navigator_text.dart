@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 
-class BuildRegisterOrLoginHereButton extends StatelessWidget {
+class NavigatorText extends StatelessWidget {
   final String text;
   final String buttonText;
   final VoidCallback onPressed;
-  const BuildRegisterOrLoginHereButton({
+  const NavigatorText({
     super.key,
     required this.text,
     required this.buttonText,

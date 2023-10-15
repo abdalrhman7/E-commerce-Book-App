@@ -1,10 +1,10 @@
-class LoginModel {
+class LoginResponse {
   User? user;
   String? token;
 
-  LoginModel({this.user, this.token});
+  LoginResponse({this.user, this.token});
 
-  LoginModel.fromJson(Map<String, dynamic> json) {
+  LoginResponse.fromJson(Map<String, dynamic> json) {
     user = json['user'] != null ? User.fromJson(json['user']) : null;
     token = json['token'];
   }
@@ -20,15 +20,16 @@ class User {
   bool? emailVerified;
   String? image;
 
-  User(
-      {this.id,
-      this.name,
-      this.email,
-      this.address,
-      this.city,
-      this.phone,
-      this.emailVerified,
-      this.image});
+  User({
+    this.id,
+    this.name,
+    this.email,
+    this.address,
+    this.city,
+    this.phone,
+    this.emailVerified,
+    this.image,
+  });
 
   User.fromJson(Map<String, dynamic> json) {
     id = json['id'];

@@ -32,6 +32,8 @@ class CartCubit extends Cubit<CartState> {
     });
   }
 
+
+  ///TODO: getAllCart
   Future<void> updateQuantity({
     required int itemId,
     required int quantity,
@@ -41,6 +43,7 @@ class CartCubit extends Cubit<CartState> {
     isIncrement ? quantity++ : quantity--;
     cartRepo.updateCart(itemId, quantity);
   }
+
 
   Future<void> removeFromCart(int itemId) async {
     cartRepo.removeFromCart(itemId).then((_) => getAllCart());

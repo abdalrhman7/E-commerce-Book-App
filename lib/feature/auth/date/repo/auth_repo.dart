@@ -8,21 +8,24 @@ class AuthRepo {
 
   AuthRepo(this.webService);
 
-  Future<LoginModel> login(
+
+
+  Future<LoginResponse> login(
       {required String email, required String password}) async {
     var response = await webService.postData(
       endPoint: ApiConstants.login,
       data: {'email': email, 'password': password},
     );
-    return LoginModel.fromJson(response.data['data']);
+    return LoginResponse.fromJson(response.data['data']);
   }
 
-  Future<LoginModel> register(RegisterModel registerModel) async {
+
+  Future<LoginResponse> register(RegisterRequest registerModel) async {
     var response = await webService.postData(
       endPoint: ApiConstants.register,
       data: registerModel.toJson(),
     );
-    return LoginModel.fromJson(response.data['data']);
+    return LoginResponse.fromJson(response.data['data']);
   }
 
 

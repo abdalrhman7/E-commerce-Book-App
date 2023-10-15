@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 
-import '../constants/app_color.dart';
-
 class CustomCircularProgressIndicator extends StatelessWidget {
   const CustomCircularProgressIndicator({
     super.key,
@@ -11,7 +9,7 @@ class CustomCircularProgressIndicator extends StatelessWidget {
   Widget build(BuildContext context) {
     return const Center(
       child: CircularProgressIndicator(
-        color: kMainColor,
+        color: Colors.white,
       ),
     );
   }
