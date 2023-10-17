@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:onboarding/onboarding.dart';
 
 import '../../../../core/app_route/routes.dart';
-import '../../../../core/constants/app_color.dart';
+import '../../../../core/theme/app_color.dart';
 import '../../../../core/local_database/cache_helpler.dart';
 import '../widgets/onboarding_page_one.dart';
 import '../widgets/onboarding_page_two.dart';
@@ -34,7 +34,7 @@ class _OnBoardingState extends State<OnBoarding> {
   Material _skipButton({void Function(int)? setIndex}) {
     return Material(
       borderRadius: defaultSkipButtonBorderRadius,
-      color: kSecondaryColor,
+      color: blue,
       child: InkWell(
         borderRadius: defaultSkipButtonBorderRadius,
         onTap: () {
@@ -57,7 +57,7 @@ class _OnBoardingState extends State<OnBoarding> {
   Material get _signupButton {
     return Material(
       borderRadius: defaultProceedButtonBorderRadius,
-      color: kSecondaryColor,
+      color: blue,
       child: InkWell(
         borderRadius: defaultProceedButtonBorderRadius,
         onTap: () {

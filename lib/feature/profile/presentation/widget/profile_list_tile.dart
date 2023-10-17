@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-import '../../../../core/constants/app_color.dart';
-import '../../../../core/constants/text_style.dart';
+import '../../../../core/theme/app_color.dart';
+import '../../../../core/theme/text_style.dart';
 
 class ProfileListTile extends StatelessWidget {
   const ProfileListTile({
@@ -30,13 +30,13 @@ class ProfileListTile extends StatelessWidget {
           SizedBox(height: 6.h),
           Text(
             info,
-            style: Style.textStyle12.copyWith(color: kGreyTextColor),
+            style: Style.textStyle12.copyWith(color: greyText),
           ),
         ],
       ),
       trailing: const Icon(
         Icons.arrow_forward_ios_sharp,
-        color: kGreyTextColor,
+        color: greyText,
         size: 16,
       ),
     );

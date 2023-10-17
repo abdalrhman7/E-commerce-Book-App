@@ -1,8 +1,8 @@
 import 'package:book_store/feature/home/date/model/products.dart';
 import 'package:flutter/material.dart';
 
-import '../../../../core/constants/app_color.dart';
-import '../../../../core/constants/text_style.dart';
+import '../../../../core/theme/app_color.dart';
+import '../../../../core/theme/text_style.dart';
 
 class CategoryAndPriceRow extends StatelessWidget {
   const CategoryAndPriceRow({
@@ -18,13 +18,13 @@ class CategoryAndPriceRow extends StatelessWidget {
       children: [
         Text(product.category!,
             style: Style.textStyle16
-                .copyWith(color: kGreyTextColor, fontWeight: FontWeight.bold)),
+                .copyWith(color: greyText, fontWeight: FontWeight.bold)),
         Column(
           children: [
             Text(
               product.price!,
               style: Style.textStyle14.copyWith(
-                  color: kGreyTextColor,
+                  color: greyText,
                   decoration: TextDecoration.lineThrough),
             ),
             Text(

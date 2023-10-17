@@ -5,8 +5,8 @@ import 'package:flutter_secure_storage/flutter_secure_storage.dart';
 
 
 import '../../core/app_route/routes.dart';
-import '../../core/constants/app_color.dart';
-import '../../core/constants/text_style.dart';
+import '../../core/theme/app_color.dart';
+import '../../core/theme/text_style.dart';
 import '../../core/local_database/cache_helpler.dart';
 
 class SplashScreen extends StatefulWidget {
@@ -55,7 +55,7 @@ class _SplashScreenState extends State<SplashScreen> {
       body: Center(
         child: Text(
           'Book App',
-          style: Style.textStyle32.copyWith(color: kSecondaryColor , fontWeight: FontWeight.bold),
+          style: Style.textStyle32.copyWith(color: blue , fontWeight: FontWeight.bold),
         ),
       ),
     );

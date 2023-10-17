@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-import '../../../../core/constants/text_style.dart';
+import '../../../../core/theme/text_style.dart';
 import '../../../home/date/model/products.dart';
 import '../widget/add_to_cart_bloc_consumer.dart';
 import '../widget/build_category_and_price_widget.dart';

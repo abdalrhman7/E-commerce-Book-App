@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-import '../../../../core/constants/app_color.dart';
+import '../../../../core/theme/app_color.dart';
 import '../../../../core/widgets/main_snack_bar.dart';
 import '../../business_logic/favorite_cubit/favorite_cubit.dart';
 
@@ -66,7 +66,7 @@ class FavoriteButtonBlocConsumer extends StatelessWidget {
           border: Border.all(color: Colors.black45),
         ),
         child: cubit.isFavorite
-            ? const Icon(Icons.favorite, color: kMainColor)
+            ? const Icon(Icons.favorite, color: redAccent)
             : const Icon(Icons.favorite_border),
       ),
     );

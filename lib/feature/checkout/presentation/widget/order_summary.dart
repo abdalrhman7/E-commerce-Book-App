@@ -1,5 +1,5 @@
-import 'package:book_store/core/constants/app_color.dart';
-import 'package:book_store/core/constants/text_style.dart';
+import 'package:book_store/core/theme/app_color.dart';
+import 'package:book_store/core/theme/text_style.dart';
 import 'package:flutter/material.dart';
 
 class OrderSummaryComponent extends StatelessWidget {
@@ -18,7 +18,7 @@ class OrderSummaryComponent extends StatelessWidget {
       children: [
         Text(
           '$title:',
-          style: Style.textStyle16.copyWith(color: kGreyTextColor),
+          style: Style.textStyle16.copyWith(color: greyText),
         ),
         Text(
           value,

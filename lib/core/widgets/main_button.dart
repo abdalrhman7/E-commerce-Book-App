@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-import '../constants/app_color.dart';
+import '../theme/app_color.dart';
 
 class MainButton extends StatelessWidget {
   final String text;
@@ -24,7 +24,7 @@ class MainButton extends StatelessWidget {
       child: ElevatedButton(
         onPressed: onTap,
         style: ElevatedButton.styleFrom(
-            backgroundColor: kMainColor,
+            backgroundColor: redAccent,
             shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(18.w))),
         child: Text(

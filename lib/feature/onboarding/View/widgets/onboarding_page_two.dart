@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:onboarding/onboarding.dart';
 
-import '../../../../core/constants/app_color.dart';
+import '../../../../core/theme/app_color.dart';
 import '../../../../core/constants/assets.dart';
-import '../../../../core/constants/text_style.dart';
+import '../../../../core/theme/text_style.dart';
 
 PageModel onBoardingPageTwo() {
   return PageModel(
@@ -24,14 +24,14 @@ PageModel onBoardingPageTwo() {
                 vertical: 90.0,
               ),
               child: Image.asset(
-                  AppAssets.onBoardingPageThree,
+                  AppAssets.onBoardingPageTwo,
               ),
             ),
              Padding(
               padding:const EdgeInsets.symmetric(horizontal: 45.0),
               child: Text(
                 'Track your orders',
-                style: Style.textStyle22.copyWith(color: kSecondaryColor , fontWeight: FontWeight.bold),
+                style: Style.textStyle22.copyWith(color: blue , fontWeight: FontWeight.bold),
                 textAlign: TextAlign.left,
               ),
             ),
@@ -39,7 +39,7 @@ PageModel onBoardingPageTwo() {
               padding:const EdgeInsets.symmetric(horizontal: 45.0, vertical: 10.0),
               child: Text(
                 'and receive notifications about exclusive offers and discounts.',
-                style: Style.textStyle16.copyWith(color: kSecondaryColor , fontWeight: FontWeight.bold , overflow: TextOverflow.visible),
+                style: Style.textStyle16.copyWith(color: blue , fontWeight: FontWeight.bold , overflow: TextOverflow.visible),
                 textAlign: TextAlign.center,
               ),
             ),

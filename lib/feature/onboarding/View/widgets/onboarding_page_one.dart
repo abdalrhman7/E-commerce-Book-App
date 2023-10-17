@@ -1,8 +1,8 @@
-import 'package:book_store/core/constants/text_style.dart';
+import 'package:book_store/core/theme/text_style.dart';
 import 'package:flutter/material.dart';
 import 'package:onboarding/onboarding.dart';
 
-import '../../../../core/constants/app_color.dart';
+import '../../../../core/theme/app_color.dart';
 import '../../../../core/constants/assets.dart';
 
 PageModel onBoardingPageOne() {
@@ -32,7 +32,7 @@ PageModel onBoardingPageOne() {
               padding: const EdgeInsets.symmetric(horizontal: 45.0),
               child: Text(
                 'Get Programing Book',
-                style: Style.textStyle22.copyWith(color: kSecondaryColor , fontWeight: FontWeight.bold),
+                style: Style.textStyle22.copyWith(color: blue , fontWeight: FontWeight.bold),
                 textAlign: TextAlign.center,
               ),
             ),

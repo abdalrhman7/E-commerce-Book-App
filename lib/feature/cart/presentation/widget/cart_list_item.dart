@@ -1,4 +1,4 @@
-import 'package:book_store/core/constants/app_color.dart';
+import 'package:book_store/core/theme/app_color.dart';
 import 'package:book_store/feature/cart/business_logic/cart_cubit/cart_cubit.dart';
 import 'package:book_store/feature/cart/presentation/widget/update_cart_buttons.dart';
 import 'package:fancy_shimmer_image/fancy_shimmer_image.dart';
@@ -6,7 +6,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-import '../../../../core/constants/text_style.dart';
+import '../../../../core/theme/text_style.dart';
 import '../../data/model/cart_model.dart';
 
 class CartListItem extends StatelessWidget {
@@ -92,7 +92,7 @@ class CartListItem extends StatelessWidget {
                 children: [
                   InkWell(
                     child: const Icon(Icons.delete_outline_outlined,
-                        color: kMainColor),
+                        color: redAccent),
                     onTap: () => BlocProvider.of<CartCubit>(context)
                         .removeFromCart(cartItems.itemId!),
                   ),

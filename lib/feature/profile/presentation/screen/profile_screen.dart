@@ -1,11 +1,11 @@
 import 'package:book_store/core/app_route/routes.dart';
-import 'package:book_store/core/constants/app_color.dart';
+import 'package:book_store/core/theme/app_color.dart';
 import 'package:book_store/feature/profile/business_logic/profile_info_cubit/profile_info_cubit.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-import '../../../../core/constants/text_style.dart';
+import '../../../../core/theme/text_style.dart';
 import '../widget/ogout_button_bloc_listener.dart';
 import '../widget/profile_info.dart';
 import '../widget/profile_list_tile.dart';
@@ -19,7 +19,7 @@ class ProfileScreen extends StatelessWidget {
       child: Padding(
         padding: EdgeInsets.symmetric(horizontal: 18.r, vertical: 12.r),
         child: RefreshIndicator(
-          color: kMainColor,
+          color: redAccent,
           onRefresh: () {
             return BlocProvider.of<ProfileInfoCubit>(context).getProfileInfo();
           },

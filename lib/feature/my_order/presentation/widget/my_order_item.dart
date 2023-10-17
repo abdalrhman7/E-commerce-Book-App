@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-import '../../../../core/constants/app_color.dart';
-import '../../../../core/constants/text_style.dart';
+import '../../../../core/theme/app_color.dart';
+import '../../../../core/theme/text_style.dart';
 import '../../data/model/my_order_model.dart';
 import 'build_rich_text.dart';
 
@@ -35,7 +35,7 @@ class MyOrderItem extends StatelessWidget {
                 Text(
                   '${order.orderDate}',
                   style: Style.textStyle14.copyWith(
-                      fontWeight: FontWeight.bold, color: kGreyTextColor),
+                      fontWeight: FontWeight.bold, color: greyText),
                 ),
               ],
             ),

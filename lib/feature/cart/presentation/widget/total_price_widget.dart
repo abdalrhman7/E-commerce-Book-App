@@ -2,7 +2,7 @@ import 'package:book_store/core/widgets/CustomCircularProgressIndicator.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-import '../../../../core/constants/text_style.dart';
+import '../../../../core/theme/text_style.dart';
 import '../../business_logic/cart_cubit/cart_cubit.dart';
 
 class TotalPriceWidget extends StatelessWidget {

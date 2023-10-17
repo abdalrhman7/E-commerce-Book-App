@@ -1,4 +1,4 @@
-import 'package:book_store/core/constants/text_style.dart';
+import 'package:book_store/core/theme/text_style.dart';
 import 'package:book_store/core/widgets/CustomCircularProgressIndicator.dart';
 import 'package:book_store/feature/checkout/business_logic/checkout_model/checkout_cubit.dart';
 import 'package:flutter/material.dart';

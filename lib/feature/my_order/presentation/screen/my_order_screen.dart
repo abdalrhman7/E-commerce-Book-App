@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-import '../../../../core/constants/text_style.dart';
+import '../../../../core/theme/text_style.dart';
 import '../../../../core/widgets/CustomCircularProgressIndicator.dart';
 import '../../../../core/widgets/search_bar_widget.dart';
 import '../widget/my_order_item.dart';

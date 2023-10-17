@@ -1,9 +1,9 @@
-import 'package:book_store/core/constants/text_style.dart';
+import 'package:book_store/core/theme/text_style.dart';
 import 'package:card_swiper/card_swiper.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-import '../../../../core/constants/app_color.dart';
+import '../../../../core/theme/app_color.dart';
 
 class BannerSlider extends StatelessWidget {
   const BannerSlider({
@@ -45,7 +45,7 @@ class SaleWidget extends StatelessWidget {
       decoration: const BoxDecoration(
         gradient: LinearGradient(
           colors: [
-            kSecondaryColor,
+            blue,
             Color(0xFF82C3DF),
           ],
           begin: FractionalOffset(0.0, 0.0),

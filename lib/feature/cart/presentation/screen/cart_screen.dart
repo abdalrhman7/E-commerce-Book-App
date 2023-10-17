@@ -1,10 +1,10 @@
 import 'package:book_store/core/app_route/routes.dart';
-import 'package:book_store/core/constants/app_color.dart';
+import 'package:book_store/core/theme/app_color.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-import '../../../../core/constants/text_style.dart';
+import '../../../../core/theme/text_style.dart';
 import '../../../../core/widgets/main_button.dart';
 import '../../business_logic/cart_cubit/cart_cubit.dart';
 import '../widget/get_cart_items_bloc_builder.dart';
@@ -33,7 +33,7 @@ class _CartScreenState extends State<CartScreen> {
         onRefresh: () {
           return BlocProvider.of<CartCubit>(context).getAllCart();
         },
-        color: kMainColor,
+        color: redAccent,
         child: SingleChildScrollView(
           child: Padding(
             padding: EdgeInsets.symmetric(horizontal: 14.r),

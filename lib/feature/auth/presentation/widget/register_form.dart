@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-import '../../../../core/constants/my_validators.dart';
+import '../../../../core/utilities/my_validators.dart';
 import '../../../../core/widgets/default_text_form_filed.dart';
 import '../../business_logic/register_cubit/register_cubit.dart';
 

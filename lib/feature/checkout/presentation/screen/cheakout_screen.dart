@@ -1,4 +1,4 @@
-import 'package:book_store/core/constants/text_style.dart';
+import 'package:book_store/core/theme/text_style.dart';
 import 'package:book_store/feature/checkout/presentation/widget/shipping_address_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';

@@ -2,7 +2,7 @@ import 'package:book_store/core/widgets/CustomCircularProgressIndicator.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-import '../constants/app_color.dart';
+import '../theme/app_color.dart';
 
 class LoadingButton extends StatelessWidget {
   const LoadingButton({
@@ -17,9 +17,11 @@ class LoadingButton extends StatelessWidget {
       child: ElevatedButton(
         onPressed: () {},
         style: ElevatedButton.styleFrom(
-            backgroundColor: kMainColor,
-            shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(18.w))),
+          backgroundColor: redAccent,
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(18.w),
+          ),
+        ),
         child: const CustomCircularProgressIndicator(),
       ),
     );

@@ -3,7 +3,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import 'core/app_route/router.dart';
 import 'core/local_database/cache_helpler.dart';
-import 'core/utilities/theme_data.dart';
+import 'core/theme/theme_data.dart';
 import 'injection.dart';
 
 void main() async {

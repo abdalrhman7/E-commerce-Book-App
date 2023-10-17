@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import '../../../../core/constants/app_color.dart';
-import '../../../../core/constants/text_style.dart';
+import '../../../../core/theme/app_color.dart';
+import '../../../../core/theme/text_style.dart';
 
 class BuildRichText extends StatelessWidget {
   const BuildRichText({
@@ -19,7 +19,7 @@ class BuildRichText extends StatelessWidget {
         children: [
           TextSpan(
               text: '$text : ',
-              style: Style.textStyle14.copyWith(color: kGreyTextColor)),
+              style: Style.textStyle14.copyWith(color: greyText)),
           TextSpan(
               text: title,
               style: Style.textStyle14
