@@ -1,7 +1,6 @@
 import 'package:book_store/core/local_database/secure_storage.dart';
 import 'package:book_store/feature/auth/business_logic/logout_cubit/logout_cubit.dart';
 import 'package:book_store/feature/auth/date/repo/auth_repo.dart';
-import 'package:book_store/feature/books/business_logic/get_all_books_cubit/get_all_books_cubit.dart';
 import 'package:book_store/feature/books/data/repo/books_repo.dart';
 import 'package:book_store/feature/cart/data/repo/cart_repo.dart';
 import 'package:book_store/feature/favorite/data/repo/favorite_repo.dart';
@@ -14,6 +13,7 @@ import 'package:persistent_bottom_nav_bar_v2/persistent-tab-view.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../../../../injection.dart';
+import '../../books/business_logic/get_books_cubit/get_books_cubit.dart';
 import '../../books/presentation/screen/book_screen.dart';
 import '../../cart/business_logic/cart_cubit/cart_cubit.dart';
 import '../../cart/presentation/screen/cart_screen.dart';
@@ -67,9 +67,9 @@ class _BottomNavbarState extends State<BottomNavbar> {
   Widget blocProviderBookScreen() {
     return MultiBlocProvider(
       providers: [
-        BlocProvider<GetAllBooksCubit>(
+        BlocProvider<GetBooksCubit>(
           create: (BuildContext context) =>
-              GetAllBooksCubit(getIt.get<BookRepo>())..getAllBooksCubit(),
+              GetBooksCubit(getIt.get<BookRepo>())..getAllBooksCubit(),
         ),
       ],
       child: const BookScreen(),

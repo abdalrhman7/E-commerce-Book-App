@@ -20,4 +20,5 @@ class ApiConstants {
   static const getGovernorates = '$baseUrl/governorates';
   static const submitOrder = '$baseUrl/place-order';
   static const myOrders = '$baseUrl/order-history';
+  static const productsSearch = '$baseUrl/products-search';
 }

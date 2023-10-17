@@ -1,5 +1,4 @@
 import 'package:book_store/feature/auth/business_logic/logout_cubit/logout_cubit.dart';
-import 'package:book_store/feature/books/business_logic/get_all_books_cubit/get_all_books_cubit.dart';
 import 'package:book_store/feature/books/data/repo/books_repo.dart';
 import 'package:book_store/feature/favorite/data/repo/favorite_repo.dart';
 import 'package:book_store/feature/home/business_logic/category_cubit/category_cubit.dart';
@@ -17,6 +16,7 @@ import 'core/local_database/secure_storage.dart';
 import 'feature/auth/business_logic/login_cubit/login_cubit.dart';
 import 'feature/auth/business_logic/register_cubit/register_cubit.dart';
 import 'feature/auth/date/repo/auth_repo.dart';
+import 'feature/books/business_logic/get_books_cubit/get_books_cubit.dart';
 import 'feature/cart/business_logic/cart_cubit/cart_cubit.dart';
 import 'feature/cart/data/repo/cart_repo.dart';
 import 'feature/checkout/business_logic/checkout_model/checkout_cubit.dart';
@@ -65,7 +65,7 @@ void initGetIt() async {
 
   ///books
   getIt
-      .registerLazySingleton<GetAllBooksCubit>(() => GetAllBooksCubit(getIt()));
+      .registerLazySingleton<GetBooksCubit>(() => GetBooksCubit(getIt()));
   getIt.registerLazySingleton<BookRepo>(() => BookRepo(getIt()));
 
   ///product_details

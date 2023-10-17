@@ -10,11 +10,18 @@ class BookRepo {
 
   Future<List<Books>> getAllBooks() async {
     var response = await webService.getData(endPoint: ApiConstants.getAllBooks);
-    List<Books> products = _getAllBooks(response.data);
+    List<Books> products = _getBooks(response.data);
     return products;
   }
 
-  List<Books> _getAllBooks(Map<String, dynamic> data) {
+  Future<List<Books>> searchBooks({required String searchKeyWord}) async {
+    var response = await webService
+        .getData(endPoint: ApiConstants.productsSearch, data: {'name': searchKeyWord});
+    List<Books> products = _getBooks(response.data);
+    return products;
+  }
+
+  List<Books> _getBooks(Map<String, dynamic> data) {
     List<Books> books = [];
 
     for (var book in data['data']['products']) {

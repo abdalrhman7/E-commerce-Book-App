@@ -13,12 +13,12 @@ class LoginButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return BlocConsumer<LoginCubit, LoginState>(
-      listener: _setBlocListener,
+      listener: (context, state) =>  _setBlocListener(context , state),
       builder: (context, state) => _setBlocBuilder(state, context),
     );
   }
 
-  void _setBlocListener(state, context) {
+  void _setBlocListener(context, state ) {
     if (state is LoginSuccess) {
       Navigator.pushNamedAndRemoveUntil(
         context,
