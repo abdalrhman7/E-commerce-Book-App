@@ -5,7 +5,7 @@ The E-commerce Book App is a Flutter-based application that allows users to expl
 - **Browse Books:** Browse a programming books.
 - **Add to Favorites:** Users can mark their favorite books for easy access.
 - **Shopping Cart:** Add books to your shopping cart for future purchase.
-- **Purchase:** A seamless process to purchase and download e-books.
+- **Purchase:** A seamless process to purchase  e-books.
 - **User Profile:** Users can manage their profiles, view their purchase history
 
 ## Technologies Used
